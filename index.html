@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital@1&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap" rel="stylesheet">
+    <title>Folklore: The long pond Studio Sessions</title>
+</head>
+<body>
+    <div id="banner">
+        <div id="mensagem"><img src="imagem1.png" alt="Imagem" id="animated-image"></div>
+    </div>
+    
+
+    <script>
+        var mensagemElement = document.getElementById("mensagem");
+        var bannerWidth = document.getElementById("banner").offsetWidth;
+    
+        function animarMensagem() {
+            var left = -250; // Inicializa a posição à esquerda da tela
+            var interval = setInterval(function() {
+                left += 5; // Move 5 pixels à direita a cada iteração
+                mensagemElement.style.left = left + "px";
+    
+                // Verifica se a mensagem atingiu o final do banner
+                if (left >= bannerWidth) {
+                    clearInterval(interval); // Para a animação
+                    setTimeout(function() {
+                        mensagemElement.style.left = "-250px"; // Reinicia a mensagem à esquerda
+                        animarMensagem(); // Inicia a animação novamente
+                    }, 1000); // Espera 1 segundo antes de reiniciar
+                }
+            }, 30); // Intervalo de 30 milissegundos para suavizar a animação
+        }
+        animarMensagem(); // Inicia a animação quando a página carrega
+</script>
+
+
+
+<h1 id="printitulo">folklore: the long pond studio sessions</h1>
+
+
+<div id="video">
+    <iframe width="760" height="500" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+<div id="sobre">
+<p>Taylor Swift apresenta esta performance intimista de todas as músicas de seu novo álbum: "folklore". Acompanhada de seus coprodutores e filmado no histórico Long Pond Studios, um cenário que evoca a natureza nostálgica e melancólica do álbum, Taylor discute a criação e o significado de cada música, enquanto gravam sua primeira apresentação pessoalmente juntos, desde a produção remota do álbum.</p>
+
+<h1 id="apenas">Apenas no disney+</h1>
+
+<a href="https://www.disneyplus.com/pt-br/movies/folklore-sessoes-no-long-pond-studio/3Xlc0EjKtKpp" id="logo"><img id="disney" src="disney.webp" alt="disney+"></a>
+
+
+</div>
+
+
+<h2 id="txtespecial">Conheça mais do nosso catálogo:</h2>
+
+<ul class="produtos">
+
+    <li>
+        <h2>Wildest Dreams</h2>
+        <img id="ulimage" src="wild.png">
+    </li>
+
+<li>
+    <h2>Miss Americana</h2>
+    <img id="ulimage" src="miss.png">
+    
+</li>
+
+<li>
+    <h2>The Eras Tour</h2>
+    <img id="ulimage" src="theeras.jpg">
+    
+</li>
+
+<li>
+    <h2>Reputation: Stadium Tour</h2>
+    <img id="ulimage" src="rep.jpg">
+  
+</li>
+
+<li>
+<h2>All too Well: the short film</h2>
+<img id="ulimage" src="alltoo.png">
+
+</li>
+
+<li>
+<h2>Cats</h2>
+<img id="ulimage" src="cats.jpg">
+
+</li>
+
+<li>
+    <h2>Anti-Hero</h2>
+    <img id="ulimage" src="anti.png">
+
+</li>
+
+<li>
+<h2>I Bet You Think About Me</h2>
+<img id="ulimage" src="ibet.jpg">
+
+</li>
+
+<li>
+<h2>Bejeweld</h2>
+<img id="ulimage" src="bej.jpg">
+
+</li>
+
+<li>
+    <h2>Ready for it...?<br> </h2>
+    <img id="ulimage" src="ready.jpg">
+
+</li>
+</ul>
+
+
+    <h1 id="quer">Quer ver <i>mais um filme</i>, verificar <i>descontos</i> ou fazer <i>login?</i><br>Faça o processo aqui embaixo!</h1 >
+<div id="abas">
+        <a href="cadastro.html" id="logo"><input id="input-padrao" type="submit" value="Fazer Cadastro" class="enviar"></a>
+
+        <a href="desconto.html" id="desc"><input id="input-padrao" type="submit" value="Desconto" class="enviar"></a>
+
+        <a href="login.html" id="desc"><input id="input-padrao" type="submit" value="login" class="enviar"></a>
+    </div>
+
+
+    <h1 id="quer">Feedback:</h1>
+<div id="satisf">
+Satisfeito<input type="range" name="Satisfacao" min="0" max="10">Muito Satisfeito
+</div>
+
+
+<br>
+
+
+<center> <button id="input-padrao" onclick="confirmar()">Confirmar</button></center>
+
+<br>
+<script>
+   function confirmar(){
+       alert("Obrigado pela sua avaliação!");
+   }
+</script>
+
+
+
+
+<footer>
+    <img id="imagem" src="banner.png" alt="logo branco" style="width: 1000px">
+    <p class="copy">&copy; Copyright Taylor Swift Productions - 2023 </p>
+  </footer>
+
+
+
+
+</body>
+</html>

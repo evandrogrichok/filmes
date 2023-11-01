@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital@1&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap" rel="stylesheet">
+    <title>Folklore: The long pond Studio Sessions</title>
+</head>
+<body>
+    
+
+<h1>Você sabia que na <i>Taylor Swift Productions </i>você tem desconto em sua compra?</h1>
+<div id="tudo">
+<p>Insira o valor total da sua compra:</p>
+<input type="number" id="valorCompra" placeholder="Insira o valor em R$">
+<button onclick="calcularDesconto()">Calcular Desconto</button>
+<p>Desconto aplicado: <span id="desconto"></span></p>
+</div>
+<script>
+    function calcularDesconto() {
+        const valorCompra = parseFloat(document.getElementById('valorCompra').value);
+
+        let desconto = 0;
+
+        if (valorCompra > 200) {
+            desconto = 0.2; // 20%
+        } else if (valorCompra > 100) {
+            desconto = 0.1; // 10%
+        }
+        else if(valorCompra<=100){
+            desconto=0.05;
+
+        }
+
+        const valorDesconto = valorCompra * desconto;
+        document.getElementById('desconto').textContent = `R$ ${valorDesconto.toFixed(2)}`;
+    }
+</script>
